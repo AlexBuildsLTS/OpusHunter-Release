@@ -155,7 +155,7 @@ flowchart LR
 - **Stack discipline.** Applying for a React role? It won't ramble about backend locking. Applying for Java backend? It focuses on services, concurrency and persistence.
 - **Zero hallucination policy.** No invented employers, technologies or metrics — every claim traces back to your own documents.
 - **Native-language writing.** Fluent, idiomatic Swedish and English (plus German, French, Spanish and more) with localized sign-offs — not literal translations.
-- **350–500 words** of substance, in clean prose. No filler, no clichés.
+- **Keeping it professional, As concise as possible** of substance, in clean prose. No filler, no clichés.
 
 ### 🎯 Real ATS Scoring
 - Deterministic scoring of how well a letter matches the listing's required skills, qualifications, languages and seniority.
