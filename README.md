@@ -318,51 +318,77 @@ flowchart LR
 ---
 
 ## 📅 Milestones
+## 🗺️ Engineering Delivery Roadmap
 
 ```mermaid
 gantt
-  title OpusHunter Delivery Milestones
+  title OpusHunter Delivery & Growth Roadmap
   dateFormat  YYYY-MM-DD
   axisFormat  %b %Y
-  section Foundation
-  Build and routing hardening         :done, foundation, 2026-09-06, 2d
-  Edge-function verification          :done, edge, 2026-09-07, 3d
-  section Intelligence
-  Context and cover-letter quality    :done, context, 2026-09-10, 4d
-  Application scoring feedback        :done, score, 2026-09-14, 4d
-  section Automation
-  ATS compatibility experiments       :done, ats, 2026-09-18, 5d
-  Human approval gates                :done, gates, 2026-09-23, 3d
-  section Scale
-  Usage and cost analytics            :active, analytics, 2026-09-26, 14d
-  Reliability and release checks      :active, reliability, 2026-09-30, 14d
-  section v1 Polish and Android
-  Android APK public release          :milestone, apk, 2026-10-05, 0d
-  Feature polish and UX smoothing     :polish, 2026-10-06, 45d
-  Performance and battery tuning      :perf, 2026-10-20, 30d
-  Google Play Store launch            :milestone, play, 2026-11-30, 0d
-  section v2 iOS and Intelligence
-  iOS build pipeline and TestFlight   :ios, 2026-12-01, 45d
-  App Store IPA release               :milestone, ipa, 2027-01-31, 0d
-  AI CV refiner and 1-page PDF export :cv, 2027-01-15, 45d
-  Analytics and interview tracker     :track, 2027-02-15, 45d
-  Push notifications and digests      :push, 2027-03-01, 30d
-  section v3 Nordic Expansion
-  Norway Denmark Finland sources      :nordic, 2027-04-01, 60d
-  Workday SmartRecruiters Varbi apply :moreats, 2027-04-15, 75d
-  Screening question auto-drafts      :screen, 2027-05-15, 45d
-  Public web app launch               :milestone, web, 2027-06-30, 0d
-  section v4 Worldwide
-  UK and Ireland localization         :uk, 2027-07-01, 60d
-  DACH and Benelux sources + ATS      :dach, 2027-08-15, 75d
-  North America sources + ATS         :na, 2027-10-01, 90d
-  Multi-currency salary insights      :salary, 2027-10-15, 60d
-  Worldwide availability              :milestone, world, 2027-12-31, 0d
-  section v5 Career Platform
-  Interview co-pilot and mock prep    :copilot, 2028-01-15, 90d
-  Outcome learning engine             :learning, 2028-02-15, 90d
-  Schools and bootcamps partnerships  :schools, 2028-04-01, 90d
-  Verified recruiter-side profiles    :recruiter, 2028-05-01, 120d
+
+  section Phase 1: Native Mobile & Core
+  Multi-tier Indeed & Scraper Engine          :done, s1, 2026-09-15, 2026-10-02
+  Universal Multi-Language Code Analyzer      :done, s2, 2026-10-01, 2026-10-07
+  Zero-Warning Type Safety & Lint Parity      :done, s3, 2026-10-06, 2026-10-08
+  Android Production APK Release (v1.0.0)     :milestone, m1, 2026-10-08, 0d
+
+  section Phase 2: App Stores & Intelligence
+  Google Play Store EAS Submission Gate       :active, p1, 2026-10-15, 30d
+  iOS IPA TestFlight & App Store Build        :p2, 2026-11-15, 45d
+  AI CV Tailor & Evidence-Synced 1-Page PDF   :p3, 2026-12-01, 30d
+  Technical Interview Co-Pilot from Codebase  :p4, 2027-01-01, 45d
+
+  section Phase 3: European Expansion
+  Workday & SmartRecruiters Direct Apply      :e1, 2027-02-15, 45d
+  Nordic Sources (Norway, Denmark, Finland)   :e2, 2027-03-01, 45d
+  DACH & Benelux Regional Scraper Modules     :e3, 2027-04-15, 60d
+  Public Web Dashboard General Availability   :milestone, m2, 2027-06-30, 0d
+
+  section Phase 4: Global Career Platform
+  UK & North American Board Scaling           :g1, 2027-07-01, 60d
+  Multi-Currency Global Salary Benchmarking   :g2, 2027-08-15, 45d
+  Recruiter-Side Verified Evidence Portal     :g3, 2027-10-01, 60d
+  Full Worldwide Release                      :milestone, m3, 2027-12-31, 0d
+```
+
+### Detailed Milestone Breakdown
+
+| Milestone            | Target Date       | Focus & Core Deliverables                                                                                                                                                                                                 |
+| :------------------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **v1.0.0 (Current)** | **October 2026**  | **Android APK Production Release**: Multi-tier Indeed radar, Universal Architectural Engine (C#, C++, Java, Kotlin, Swift, Python, Go, Rust, Node), BYOK Vault with PIN encryption, 120fps Reanimated touch architecture. |
+| **v1.1.0**           | **November 2026** | **Play Store & iOS Beta**: Google Play Store release, iOS TestFlight distribution, automated background job alerts, battery-efficient background refresh.                                                                 |
+| **v1.2.0**           | **January 2027**  | **Evidence-Ground CV Studio**: 1-click tailored 1-page PDF resume generation directly verified against candidate code repositories and certifications.                                                                    |
+| **v2.0.0**           | **April 2027**    | **Nordic & Continental Scale**: Workday / SmartRecruiters / Varbi deep form integration, regional expansion into Norway (Finn.no), Denmark (Jobindex), and DACH.                                                          |
+| **v3.0.0**           | **Late 2027**     | **Global Career Operating System**: Full North American and UK expansion, interview question simulator from candidate repositories, recruiter-side evidence verification.                                                 |
+
+---
+
+## 🏗️ Architecture & Component Topology
+
+```mermaid
+flowchart LR
+  User[Candidate Mobile / Web] --> App[Expo Router App]
+  App --> Auth[Supabase Auth]
+  App --> Query[TanStack Query]
+  App --> Store[Zustand State Stores]
+  Query --> API[Supabase Client Client-Side]
+  API --> DB[(PostgreSQL + RLS)]
+  API --> Storage[(Supabase Storage Vault)]
+  API --> Functions[Supabase Edge Functions]
+
+  Functions --> Scrape[scrape-jobs]
+  Functions --> Evidence[projectEvidence.ts]
+  Functions --> Context[extract-context]
+  Functions --> Letter[generate-cover-letter]
+  Functions --> Score[score-cover-letter]
+  Functions --> Submit[submit-application]
+  Functions --> Email[send-application-email]
+  Functions --> Keys[_shared/keyResolver]
+
+  Scrape --> Providers[Indeed Multi-Tier / JobTech / SweClockers / The Hub / LinkedIn]
+  Letter --> AI[Google Gemini 2.5 Cascade]
+  Submit --> ATS[Greenhouse / Teamtailor / Lever]
+  Email --> Mail[Gmail / Outlook OAuth]
 ```
 
 ---
