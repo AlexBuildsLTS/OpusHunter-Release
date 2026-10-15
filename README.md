@@ -104,7 +104,8 @@ Detects the best route — ATS, recruiter email or job site — and applies in a
 | 🤖 **Android (APK)** | ✅ Available | [**Latest Release →**](../../releases/latest) |
 | ▶️ **Google Play Store** | 🚧 In preparation | Coming soon |
 | 🍎 **iOS (App Store)** | 🗓️ Planned | Coming later |
-| 🌐 **Web App** | 🧪 Preview | Coming soon |
+| 🌐 **Web App** | ✅ Available | 🌐 [**Web App (Live)**](https://opus-hunter.vercel.app/) |
+
 
 </div>
 
