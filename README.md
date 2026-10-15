@@ -12,8 +12,8 @@ Built for the global market — perfected first in Sweden 🇸🇪 and the Nordi
 
 <br/>
 
-<a href="../../releases/latest"><img src="https://img.shields.io/github/v/release/alex-f-youssef/OpusHunter-release?style=for-the-badge&label=Latest%20Release&color=00D4FF&labelColor=0B1220" alt="Latest release" /></a>
-<a href="../../releases"><img src="https://img.shields.io/github/downloads/alex-f-youssef/OpusHunter-release/total?style=for-the-badge&label=Downloads&color=3ECF8E&labelColor=0B1220" alt="Downloads" /></a>
+<a href="https://github.com/AlexBuildsLTS/OpusHunter-Release/releases/tag/v1.6.0-beta"><img src="https://img.shields.io/github/v/release/AlexBuildsLTS/OpusHunter-Release?include_prereleases&style=for-the-badge&label=Latest%20Release&color=00D4FF&labelColor=0B1220" alt="Latest release" /></a>
+<a href="https://github.com/AlexBuildsLTS/OpusHunter-Release/releases"><img src="https://img.shields.io/github/downloads/AlexBuildsLTS/OpusHunter-Release/total?style=for-the-badge&label=Downloads&color=3ECF8E&labelColor=0B1220" alt="Downloads" /></a>
 <img src="https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=0B1220" alt="Android" />
 <img src="https://img.shields.io/badge/iOS-Coming%20Soon-A0A0A0?style=for-the-badge&logo=apple&logoColor=white&labelColor=0B1220" alt="iOS coming soon" />
 
