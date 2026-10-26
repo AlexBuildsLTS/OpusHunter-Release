@@ -12,13 +12,12 @@ Built for every profession and global market — perfected first in Sweden 🇸�
 
 <br/>
 
-<a href="https://github.com/AlexBuildsLTS/OpusHunter-Release/releases/tag/v1.6.4-beta"><img src="https://img.shields.io/github/v/release/AlexBuildsLTS/OpusHunter-Release?include_prereleases&style=for-the-badge&label=Latest%20Release&color=00D4FF&labelColor=0B1220" alt="Latest release" /></a>
-<a href="https://github.com/AlexBuildsLTS/OpusHunter-Release/releases"><img src="https://img.shields.io/github/downloads/AlexBuildsLTS/OpusHunter-Release/total?style=for-the-badge&label=Downloads&color=3ECF8E&labelColor=0B1220" alt="Downloads" /></a>
+<a href="https://github.com/AlexBuildsLTS/OpusHunter-Release/releases/latest"><img src="https://img.shields.io/github/v/release/AlexBuildsLTS/OpusHunter-Release?include_prereleases&style=for-the-badge&label=Latest%20Release&color=00D4FF&labelColor=0B1220" alt="Latest release" /></a>
+<a href="https://github.com/AlexBuildsLTS/OpusHunter-Release/releases/latest"><img src="https://img.shields.io/github/downloads/AlexBuildsLTS/OpusHunter-Release/total?style=for-the-badge&label=Downloads&color=3ECF8E&labelColor=0B1220" alt="Downloads" /></a>
 <img src="https://img.shields.io/badge/Platform-Android%20APK%20%7C%20Web-3DDC84?style=for-the-badge&logo=android&logoColor=white&labelColor=0B1220" alt="Android and Web" />
 <img src="https://img.shields.io/badge/iOS-IPA%20Ready-A0A0A0?style=for-the-badge&logo=apple&logoColor=white&labelColor=0B1220" alt="iOS IPA Ready" />
 
-<br/>
-
+<br/> 
 <img src="https://img.shields.io/badge/Expo%20SDK-57.0.28-000020?style=flat-square&logo=expo" alt="Expo SDK 57.0.28" />
 <img src="https://img.shields.io/badge/React%20Native-0.86.3-61DAFB?style=flat-square&logo=react" alt="React Native 0.86.3" />
 <img src="https://img.shields.io/badge/TypeScript-6.0.3-3178C6?style=flat-square&logo=typescript" alt="TypeScript 6.0.3" />
